@@ -1,0 +1,21 @@
+{
+  "name": "auth0-simple-custom-db-connection-demo",
+  "description": "Auth0 Simple Custom Database Connection Demo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "ngrok": "ngrok http 5000"
+  },
+  "author": "Auth0",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "morgan": "^1.8.1",
+    "ngrok": "^2.2.9"
+  }
+}

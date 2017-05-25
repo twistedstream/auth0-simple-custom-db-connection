@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Auth0 Simple Custom Database Connection",
+		"_postman_id": "c9ba481e-c3d7-97ba-28d5-5c74258d90cf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"url": "https://{{DOMAIN}}/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-API-KEY",
+						"value": "{{API_KEY}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"peter@auth0.com\",\n\t\"password\": \"pw\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Permissions",
+			"request": {
+				"url": "https://{{DOMAIN}}/users/1001/permissions",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "{{API_KEY}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
